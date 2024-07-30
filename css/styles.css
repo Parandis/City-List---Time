@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+#city-nav {
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-list li {
+    position: relative;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: #bcbcbc;
+    border-bottom: 2px solid #bcbcbc;
+    transition: color 0.3s, #bcbcbc 0.3s;
+    outline: none;
+}
+
+#nav-list li.active {
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+#nav-list li:focus {
+    border-color: #000;
+}
+
+#indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s, transform 0.3s;
+}
+
+#city-time {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 975px) {
+    #nav-list li {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 830px) {
+    #nav-list li {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #nav-list {
+        flex-direction: column;
+    }
+
+    #indicator {
+        display: none;
+    }
+    
+    #city-time {
+        margin-left: 3rem;
+        font-size: 1.2rem;
+    }
+}
