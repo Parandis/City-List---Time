@@ -3,7 +3,7 @@
 ### What’s This?
 This project shows a list of cities. You can click on any city to see its current local time. The active city gets a highlight with a moving indicator.
 
-###Files
+### Files
 - index.html: This file contains the HTML structure of the page.
 - css/styles.css: This file has all the styles that make the page look nice.
 - js/script.js: This JavaScript file handles the interactive parts, like fetching data and updating the time.
